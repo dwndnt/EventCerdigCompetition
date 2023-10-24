@@ -6,14 +6,14 @@ Modified & Was programming by Dewan Dinata
 
 
 
-| Gambar Utama                        |
+| Main view                        |
 |------------------------------------|
 | ![Gambar Utama](ID_main.png) |
 
-| Gambar 1                       | Gambar 2                       |
+| Committe Section                       | YT Play Button 2                       |
 |-------------------------------|-------------------------------|
 | ![Gambar 1](ID_commite.png) | ![Gambar 2](yt.png) |
 
-| Gambar 3                       | Gambar 4                       |
+| Sponsor Section                       | Register Section 4                       |
 |-------------------------------|-------------------------------|
 | ![Gambar 3](ID_sponsor.png) | ![Gambar 4](ID_register.png) |
