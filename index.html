@@ -36,6 +36,15 @@
       window.scrollTo(0, 0);
     });
   </script>
+
+<style>
+  /* Tambahkan margin top untuk section informasi */
+  #information {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+</style>
+
   
 </head>
 
@@ -59,10 +68,10 @@
           <li><a href="#about">About</a></li>
           <li><a href="#speakers">Committe</a></li>
           <li><a href="#schedule">Social Media</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#information">information</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="buy-tickets"><a href="#buy-tickets">Register</a></li>
+          <li class="buy-tickets"><a href="http://bit.ly/cerdig-competition">Register</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -241,27 +250,77 @@
     <!--==========================
       Gallery Section
     ============================-->
-    <section id="gallery" class="wow fadeInUp">
-
+    <section id="information" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Check our gallery from the recent events</p>
+          <h2>INFORMATION</h2>
+          <p>Below are some important points you need to know.</p>
         </div>
       </div>
-
-      <div class="owl-carousel gallery-carousel">
-        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
-        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
-        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
-        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
-        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
-        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
-        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
-        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-box">
+              <!-- Informasi tentang Science Competition akan Anda isi di sini. -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    ROBOTIC COMPETITION
+                    </button>
+                  </h5>
+                </div>
+    
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      <strong>Perlengkapan Peserta:</strong>
+                    </p>
+                    <ul>
+                      <li>Peserta wajib membawa segala perlengkapan dan alat yang diperlukan untuk melakukan perbaikan atau perawatan pada robot selama lomba.</li>
+                      <li>Peserta dapat membawa baterai cadangan, peralatan pemrograman, dan alat perbaikan lainnya.</li>
+                    </ul>
+                    <p>
+                      <strong>Batasan Waktu:</strong>
+                    </p>
+                    <ul>
+                      <li>Panitia akan menentukan batasan waktu untuk setiap putaran atau percobaan robot dalam mengikuti lintasan.</li>
+                      <li>Peserta harus menyelesaikan lintasan dalam batasan waktu yang ditentukan.</li>
+                    </ul>
+                    <p>
+                      <strong>Penilaian:</strong>
+                    </p>
+                    <ul>
+                      <li>Penilaian akan didasarkan pada sejauh mana robot mengikuti lintasan dengan benar dan secepat mungkin.</li>
+                      <li>Pelanggaran aturan akan berdampak pada penalti atau diskualifikasi.</li>
+                    </ul>
+                    </p>
+                    <p>
+                      <strong>Syarat Peserta:</strong>
+                    </p>
+                    <ul>
+                      <li>Siswa/i SLTA Sederajat</li>
+                      <li>Membawa Robot line Follower masing-masing, dengan kriteria akan ditentukan kemudian</li>
+                      <li>1 Tim terdiri dari 2 peserta</li>
+                    </ul>
+                    <p>
+                      <strong>Harga per tim:</strong> 200 rb
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </section>
+    
+    
+    
 
     <!--==========================
       Sponsors Section
@@ -350,7 +409,7 @@
 
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                  <button type="button" class="btn" onclick="window.location.href='http://bit.ly/cerdig-competition'">Register Now</button>
                 </div>
               </div>
             </div>
@@ -364,7 +423,7 @@
 
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                  <button type="button" class="btn"  onclick="window.location.href='http://bit.ly/cerdig-competition'">Register Now</button>
                 </div>
               </div>
             </div>
@@ -378,34 +437,11 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Buy Tickets</h4>
+              <h4 class="modal-title">Register Now</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                  <select id="ticket-type" name="ticket-type" class="form-control" >
-                    <option value="">-- Select Your Ticket Type --</option>
-                    <option value="standard-access">Standard Access</option>
-                    <option value="pro-access">Pro Access</option>
-                  </select>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn">Buy Now</button>
-                </div>
-              </form>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
 
     </section>
 
@@ -449,32 +485,6 @@
 
         </div>
 
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
       </div>
     </section><!-- #contact -->
 
@@ -484,6 +494,13 @@
   <!--==========================
     Footer
   ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        © Copyright <strong>Gerakan Cerdas Digital ID</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
